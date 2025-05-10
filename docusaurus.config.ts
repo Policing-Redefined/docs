@@ -58,6 +58,11 @@ const config: Config = {
                 }
             ],
         },
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: true,
+
+        },
         footer: {
             style: 'dark',
             links: [
@@ -68,6 +73,10 @@ const config: Config = {
                             label: 'Getting Started',
                             to: '/docs/intro',
                         },
+                        {
+                            label: 'Repository',
+                            to: 'https://github.com/Policing-Redefined/docs'
+                        }
                     ],
                 },
                 {
@@ -86,22 +95,13 @@ const config: Config = {
                             href: 'https://x.com/docusaurus',
                         },
                     ],
-                },
-                {
-                    title: 'More',
-                    items: [
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/facebook/docusaurus',
-                        },
-                    ],
-                },
+                }
             ],
             copyright: `Copyright © ${new Date().getFullYear()} PR Team. Built with Docusaurus.`,
         },
         prism: {
             theme: prismThemes.github,
-            darkTheme: prismThemes.dracula,
+            darkTheme: prismThemes.nightOwl,
         },
     } satisfies Preset.ThemeConfig,
 };
