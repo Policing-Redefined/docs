@@ -1,18 +1,20 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import zoomableImage from "@site/src/components/UtilityFeatures/ZoomableImage";
+import CodeBlock from '@theme/CodeBlock';
 
 type FeatureItem = {
     title: string;
-    Svg: React.ComponentType<React.ComponentProps<"svg">>;
+    image: string;
     description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
     {
-        title: "Feature-Rich and Immersive",
-        Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+        title: "Advanced Features",
+        image: "/img/IndexMenus.png",
         description: (
             <>
                 PR opens whole new world of opportunities to make your patrol as immersive as you can imagine,
@@ -21,32 +23,32 @@ const FeatureList: FeatureItem[] = [
         ),
     },
     {
-        title: "Ped Interaction And Backup",
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        title: "Top Immersion",
+        image: "/img/IndexImr.png",
         description: (
             <>
-                PR opens whole new world of opportunities to make your patrol as immersive as you can imagine,
-                offering new and more in-depth features over similar plugins.
+                PR enhances ped, traffic stop and backup interactions giving you precise control over your
+                gameplay and patrol experience.
             </>
         ),
     },
     {
-        title: 'By and For Developers',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        title: 'Made For Players',
+        image: "/img/IndexCustom.png",
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                PR offers a huge amount of customizations and settings that you can
+                tweak to your liking and preferences. This is truly <b>your</b> patrol.
             </>
         ),
     },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
-                <Svg className={styles.featureSvg} role="img"/>
+                { zoomableImage({ src: image, alt: title, clazz: "featureImg" }) }
             </div>
             <div className="text--center padding-horiz--md">
                 <Heading as="h3">{title}</Heading>
