@@ -13,7 +13,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
     {
         title: "Advanced Features",
-        image: "/img/IndexMenus.png",
+        image: "/img/homepage/IndexMenus.png",
         description: (
             <>
                 PR opens whole new world of opportunities to make your patrol as immersive as you can imagine,
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: "Top Immersion",
-        image: "/img/IndexImr.png",
+        image: "/img/homepage/IndexImr.png",
         description: (
             <>
                 PR enhances ped, traffic stop and backup interactions giving you precise control over your
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Made For Players',
-        image: "/img/IndexCustom.png",
+        image: "/img/homepage/IndexCustom.png",
         description: (
             <>
                 PR offers a huge amount of customizations and settings that you can
