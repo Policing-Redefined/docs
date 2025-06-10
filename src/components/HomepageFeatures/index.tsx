@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import zoomableImage from "@site/src/components/UtilityFeatures/ZoomableImage";
-import CodeBlock from '@theme/CodeBlock';
 
 type FeatureItem = {
     title: string;

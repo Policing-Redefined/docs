@@ -47,7 +47,7 @@ const config: Config = {
             title: 'Policing Redefined',
             logo: {
                 alt: 'Policing Redefined Logo',
-                src: 'img/logo.svg',
+                src: 'img/PolicingRedefined.png',
             },
             items: [
                 {
@@ -81,18 +81,18 @@ const config: Config = {
                 },
                 {
                     title: 'Community',
-                    items: [
+                    items: [ // TODO
                         {
                             label: 'Discord',
                             href: 'https://discord.gg/',
                         },
                         {
                             label: 'LCPDFR Homepage',
-                            href: 'https://x.com/docusaurus',
+                            href: 'https://lcpdfr.com/',
                         },
                         {
                             label: 'Modification Universe Homepage',
-                            href: 'https://x.com/docusaurus',
+                            href: 'https://modification-universe.com/',
                         },
                     ],
                 }
