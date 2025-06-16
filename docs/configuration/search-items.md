@@ -7,8 +7,9 @@ sidebar_position: 3
 
 What would PR be without search items? Well guess what: they are even more advanced!\
 `PatDownItems.xml` defines search items for ped searches while `VehicleSearchItems.xml` defines
-search items for vehicle searches. Makes sense, right? Plus, it also comes with already the powerful
-**Search Items Reborn** made by Officer34 right out of the box!
+search items for vehicle searches. Makes sense, right?\
+In case you don't want to set up your own items, don't worry: We got you covered! 
+PR already comes with the powerful **Search Items Reborn** made by Officer34 right out of the box!
 
 The base of both files holds three entries:
 ```xml
