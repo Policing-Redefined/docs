@@ -210,8 +210,8 @@ Using our `LocalPatrol` as example again, it is as simple as:
     ...
 </LocalPatrol>
 ```
-**A single unit CANNOT have several custom regions using the same zone. Though that should also
-be common sense.**
+**IMPORTANT:** A single unit CANNOT have several custom regions using the same zone. Though that should also
+be common sense.
 
 ## `SpecialUnits.xml`
 Here you can create your own `SpecialUnit` unit which is basically a mix of a default and custom unit entry:
@@ -243,6 +243,9 @@ Each a list of `VehicleDivision` just like in [`DefaultRegions.xml`](#defaultreg
     </CustomRegions>
 </SpecialUnit>
 ```
+**IMPORTANT:** Currently PR does NOT support special units that have air vehicles, therefore you
+cannot define special air units, doing so will lead to undefined behavior and such reports will
+be **ignored**. This feature is planned for the future though!
 
 ## `CustomUnitNames.xml`
 This is an additional fourth file allowing you to create list of names that you can assign to a
