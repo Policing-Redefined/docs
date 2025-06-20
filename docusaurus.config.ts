@@ -52,9 +52,15 @@ const config: Config = {
             items: [
                 {
                     type: 'docSidebar',
-                    sidebarId: 'tutorialSidebar',
+                    sidebarId: 'userGuideSidebar',
                     position: 'left',
-                    label: 'Tutorial',
+                    label: 'User Guide',
+                },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'developerGuideSidebar',
+                    position: 'left',
+                    label: 'Developer Guide',
                 }
             ],
         },
@@ -70,18 +76,22 @@ const config: Config = {
                     title: 'Docs',
                     items: [
                         {
-                            label: 'Getting Started',
-                            to: '/docs/intro',
+                            label: 'User Guide',
+                            to: '/docs/user-docs/intro',
                         },
                         {
-                            label: 'Repository',
+                            label: 'Developer Guide',
+                            to: '/docs/developer-docs/intro',
+                        },
+                        {
+                            label: 'Docs Repository',
                             to: 'https://github.com/Policing-Redefined/docs'
                         }
                     ],
                 },
                 {
                     title: 'Community',
-                    items: [ // TODO
+                    items: [ 
                         {
                             label: 'Discord',
                             href: 'https://discord.gg/',
