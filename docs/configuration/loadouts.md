@@ -21,7 +21,7 @@ You can edit them in `Settings/Loadouts.xml` where a `Loadout` (wrapped in `<All
 
 `LoadoutWeapons` is where you can define multiple `LoadoutWeapon` entries which consists of the
 following:
-- `WeaponHash`: A [weapon id](https://docs.fivem.net/docs/game-references/weapon-models/)
+- `WeaponHash`: A [weapon](https://docs.fivem.net/docs/game-references/weapon-models/)
 - `StartingAmmoCount`: How much ammo this weapon should get when the loadout is equipped
 - `IsVehicleWeapon`: Whether this weapon has to be retrieved from a patrol vehicle first
   - When set to `False` the weapon will be instantly given to your inventory

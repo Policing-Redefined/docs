@@ -45,13 +45,13 @@ above, we didn't define it, therefore PR interprets them as "normal" search item
 Let's define a `Firearm` which consists of the following:
 - `FirearmState`: Whether the firearm has a scratched serial number (`Normal`, `ScratchedSN`)
 - `IsStolen`: Whether the firearm should come out as stolen
-- `WeaponModelId`: What kind of [weapon id](https://docs.fivem.net/docs/game-references/weapon-models/) this firearm item represents
+- `WeaponModelId`: What kind of [weapon](https://docs.fivem.net/docs/game-references/weapon-models/) this firearm item represents
 - `IsVisible`: Whether this firearm is being carried open (affects observation)
 ```xml
 <Item xsi:type="Firearm" Chance="Normal" FirearmState="Normal" WeaponModelId="WEAPON_PISTOL">Concealed Semi-Auto Pistol</Item>
 ```
 You can also define a melee `Weapon` which consists of the following:
-- `WeaponModelId`: What kind of [weapon id](https://docs.fivem.net/docs/game-references/weapon-models/) this weapon item represents
+- `WeaponModelId`: What kind of [weapon](https://docs.fivem.net/docs/game-references/weapon-models/) this weapon item represents
 ```xml
 <Item xsi:type="Weapon" Chance="Normal" WeaponModelId="WEAPON_KNIFE">4-inch folding pocket knife</Item>
 ```
