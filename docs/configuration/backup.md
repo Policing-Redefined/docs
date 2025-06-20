@@ -244,7 +244,7 @@ Each a list of `VehicleDivision` just like in [`DefaultRegions.xml`](#defaultreg
 </SpecialUnit>
 ```
 **IMPORTANT:** Currently PR does NOT support special units that have air vehicles, therefore you
-cannot define special air units, doing so will lead to undefined behavior and such reports will
+cannot define special air units. Doing so will lead to undefined behavior and such reports will
 be **ignored**. This feature is planned for the future though!
 
 ## `CustomUnitNames.xml`
