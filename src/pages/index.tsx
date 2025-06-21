@@ -24,7 +24,7 @@ function HomepageHeader() {
                         Getting Started As A User
                     </Link>
                     <Link
-                        className="button button--secondary button--lg disabled"
+                        className="button button--secondary button--lg"
                         to="/docs/developer-docs/intro">
                         Getting Started As A Developer
                     </Link>
