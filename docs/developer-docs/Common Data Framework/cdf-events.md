@@ -15,7 +15,7 @@ public static event OnPedDataRemovedDelegate OnPedDataRemoved;
 ```
 
 :::info Important
-This event is not invoked if the entire database is cleared; it specifically pertains to the removal of individual `PedData` entries.
+This event is not invoked if the entire cache is cleared; it specifically pertains to the removal of individual `PedData` entries.
 :::
 
 ---
@@ -29,7 +29,7 @@ public static event OnVehicleDataRemovedDelegate OnVehicleDataRemoved;
 ```
 
 :::info Important
-This event is not invoked if the entire database is cleared; it specifically pertains to the removal of individual `VehicleData` entries.
+This event is not invoked if the entire cache is cleared; it specifically pertains to the removal of individual `VehicleData` entries.
 :::
 
 ---
