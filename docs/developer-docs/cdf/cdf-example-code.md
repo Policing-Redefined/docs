@@ -3,6 +3,18 @@ sidebar_label: 'Example Code'
 ---
 
 # Example for developers
+:::tip
+CDF might take some time until it fully read the users .xml and .ini file on startup. This means that if you try to access CDF stuff before it was marked as ready, it will have to fall back to default values. One way of solving this is shown below.
+```csharp
+ private static void OnOnDutyStateChanged(bool onDuty)
+    {
+        OnDutyState = onDuty;
+        GameFiber.WaitUntil(CDFFunctions.IsPluginReady, 30000);        
+    }
+```
+Alternatively, if you don't care about the default values or you are not using CDF right on startup, you can simply skip this.
+:::
+
 ```csharp
 using CommonDataFramework.API;
 using CommonDataFramework.Modules;
@@ -72,19 +84,5 @@ public class EntryPoint : Plugin
             vehicleData.Registration.Status = EDocumentStatus.Expired;
             Game.LogTrivial($"Vehicle registration expired on: {vehicleData.Registration.ExpirationDate:MM/dd/yyyy}");
         }
-    }
-
-    private static void OnOnDutyStateChanged(bool onDuty)
-    {
-        OnDutyState = onDuty;
-        
-        // CDF might take some time until it fully read the users .xml and .ini file on startup.
-        // This means that if you try to access CDF stuff before it was marked as ready, it will have to fall back to default values.
-        // One way of solving this:
-        
-        GameFiber.WaitUntil(CDFFunctions.IsPluginReady, 30000); // The fiber will wait until CDF loaded fully.
-        // ...rest of your startup code that includes CDF usage.
-        
-        // Alternatively, if you don't care about the default values or you are not using CDF right on startup, you can simply skip this.
     }
 ```
