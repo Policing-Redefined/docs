@@ -6,6 +6,8 @@ sidebar_position: 4
 
 CDF provides events that developers can subscribe to in order to help their plugins become more responsive and performant. 
 
+## Events
+
 ### `OnPedDataRemoved`
 
 Invoked when `PedData` for a specific ped is removed from CDF.
@@ -34,6 +36,16 @@ This event is not invoked if the entire cache is cleared; it specifically pertai
 
 ---
 
-### Delegate Type
+## Delegates
 
-For details on the signature and parameters for each delegate, refer to the [delegates](/docs/developer-docs/Common%20Data%20Framework/delegates.md) page.
+### `OnPedDataRemovedDelegate`
+
+```csharp
+public delegate void OnPedDataRemovedDelegate(Ped ped, PedData pedData);
+```
+---
+### `OnVehicleDataRemovedDelegate`
+
+```csharp
+public delegate void OnVehicleDataRemovedDelegate(Vehicle vehicle, VehicleData vehicleData);
+```
