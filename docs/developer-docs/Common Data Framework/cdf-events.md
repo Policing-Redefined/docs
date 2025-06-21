@@ -36,4 +36,4 @@ This event is not invoked if the entire cache is cleared; it specifically pertai
 
 ### Delegate Type
 
-For details on the signature and parameters for each delegate, refer to the [Common Data Framework Delegates](/docs/developer-docs/Common%20Data%20Framework/delegates.md) page.
+For details on the signature and parameters for each delegate, refer to the [delegates](/docs/developer-docs/Common%20Data%20Framework/delegates.md) page.
