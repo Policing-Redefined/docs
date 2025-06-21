@@ -17,11 +17,11 @@ Gets or sets the current status of the permit.
 Changing this value will automatically affect the `ExpirationDate` based on the new status.
 :::
 ```csharp
-public EDocumentStatus Status
+public EDocumentStatus Status;
 ```
 
 -   **Type:** `EDocumentStatus`
--   **See Also:** [EDocumentStatus](http://localhost:3000/docs/developer-docs/Common%20Data%20Framework/Peds/permits#edocumentstatus)
+-   **See Also:** [EDocumentStatus](#edocumentstatus)
 
 ---
 
@@ -32,9 +32,9 @@ Gets or sets the expiration date of the permit.
 This can be `null` if the `Status` is `EDocumentStatus.None`.
 :::
 ```csharp
-public DateTime ExpirationDate
+public DateTime? ExpirationDate;
 ```
--   **See Also:** [EDocumentStatus](http://localhost:3000/docs/developer-docs/Common%20Data%20Framework/Peds/permits#edocumentstatus)
+-   **See Also:** [EDocumentStatus](#edocumentstatus)
 
 ---
 
@@ -47,11 +47,11 @@ Represents a specialized type of permit specifically for weapons. **It extends t
 Gets or sets the specific type of weapon permit.
 
 ```csharp
-public EWeaponPermitType PermitType
+public EWeaponPermitType PermitType;
 ```
 
 -   **Type:** `EWeaponPermitType`
--   **See Also:** [`EWeaponPermitType` enumeration](#eweaponpermittype-enumeration)
+-   **See Also:** [`EWeaponPermitType` enumeration](#eweaponpermittype)
 
 ## Enums
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'What is it'
+sidebar_label: 'What is it?'
 sidebar_position: 1
 ---
 
@@ -14,9 +14,9 @@ It's main goal is to replace missing features of the LSPDFR API while providing 
 ---
 ## Features
 ### General
-- Lightweight and easy-to-use API: `ped.GetPedData()` and `vehicle.GetVehicleData()`, aswell as events
+- Lightweight and easy-to-use API: `ped.GetPedData()` and `vehicle.GetVehicleData()`, as well as events
 - Even when the entity stopped existing, CDF stores the data in the database for an extra period of time to ensure longer accessibility
-- Very customizeable objects to alter almost any property to your needs
+- Very customizable objects to alter almost any property to your needs
 - End-user can customize probabilities through a simple `.ini` to enhance their gameplay experience without you having to write extra code
 
 ### Pedestrian Data
@@ -30,8 +30,8 @@ It's main goal is to replace missing features of the LSPDFR API while providing 
 - VIN
 - Registration
 - Insurance
-- Vehicle owner (of type `PedData`) aswell as different owner "types"
+- Vehicle owner (of type `PedData`) as well as different owner "types"
 
 ### Example images by PR
-![Example of PR using PedData](https://i.ibb.co/NSLw5F1/Example-Ped-Data.png)
-![Example of PR using VehicleData](https://i.ibb.co/1f5LttR/Example-Vehicle-Data.png)
+![Example of PR using PedData](./img/example_ped_data.png)
+![Example of PR using VehicleData](./img/example_vehicle_data.png)
