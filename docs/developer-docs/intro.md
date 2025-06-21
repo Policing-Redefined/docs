@@ -11,7 +11,7 @@ plugins such as **Stop The Ped**, **Ultimate Backup** by Bejoijo or **LSPDFR+**,
 
 In order to accomplish this mission, we have made an open source library in order to store, retrieve, and edit ped and vehicle information. We have expanded what LSPDFR natively offers with this library, and hope this library gives the players an experience where information about a ped is the same throughout **all** their plugins. This library is the [CommonDataFramework (CDF)](https://github.com/Policing-Redefined/CommonDataFramework). To learn more about it, [click here](/docs/developer-docs/cdf/what-is-it.md).
 
-### Additionally,
+### Additionally
 
 PolicingRedefined offers its own APIs for interaction and backup elements of this mod including but not limited to:
 - Search items
@@ -22,7 +22,7 @@ PolicingRedefined offers its own APIs for interaction and backup elements of thi
 
 Documentation for PR specific apis will be coming soon.
 
-### Finally,
+### Finally
 
 We understand having to juggle two different packages to accomplish similar goals can be confusing. This is why we have added the ability for devs to use the different APIs that CDF offers within the PolicingRedefined package. 
 
