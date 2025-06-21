@@ -1,0 +1,8 @@
+{
+  "label": "Ped Stop",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "A showcase of all Ped Stop features."
+  }
+}
