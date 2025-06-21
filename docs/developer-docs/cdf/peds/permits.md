@@ -53,7 +53,7 @@ public EWeaponPermitType PermitType;
 -   **Type:** `EWeaponPermitType`
 -   **See Also:** [`EWeaponPermitType` enumeration](#eweaponpermittype)
 
-## Enums
+## Permit Enums
 
 ### `EWeaponPermitType`
 
