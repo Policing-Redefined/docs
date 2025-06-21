@@ -9,7 +9,7 @@ sidebar_position: 1
 
 Common Data Framework 'CDF' is an open-source LSPDFR plugin that offers an extended vehicle and ped record API for developers. 
 
-It's main goal is to replace missing features of the LSPDFR API while providing synchronization of that data across all plugins who use it. It is used by the PolicingRedefinedand plugin and is already planned to be implement in current and future plugins including some of your favorites like [GrammarPolice](https://www.lcpdfr.com/downloads/gta5mods/scripts/28003-grammarpolice/), [ReportsPlus](https://www.lcpdfr.com/downloads/gta5mods/scripts/46968-reportsplus-external-mdt-new-custom-reports/), and [ExternalPoliceComputer](https://www.lcpdfr.com/downloads/gta5mods/scripts/45400-externalpolicecomputer/). 
+It's main goal is to replace missing features of the LSPDFR API while providing synchronization of that data across all plugins who use it. It is used by the PolicingRedefined plugin and is already planned to be implement in current and future plugins including some of your favorites like [GrammarPolice](https://www.lcpdfr.com/downloads/gta5mods/scripts/28003-grammarpolice/), [ReportsPlus](https://www.lcpdfr.com/downloads/gta5mods/scripts/46968-reportsplus-external-mdt-new-custom-reports/), and [ExternalPoliceComputer](https://www.lcpdfr.com/downloads/gta5mods/scripts/45400-externalpolicecomputer/). 
 
 ---
 ## Features
