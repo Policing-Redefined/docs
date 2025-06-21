@@ -5,7 +5,9 @@ sidebar_position: 5
 
 # Backup
 
-[**Beforehand: PR is able to convert and use your UB configs!**](../installation/first-launch.md#switching-from-ultimate-backup)
+:::tip
+PR is able to convert and use your UB configs! [Click here](../installation/first-launch.md#switching-from-ultimate-backup) on how to achieve that.
+:::
 
 ## `VehicleDivision`
 Before explaining the structure of the config files, this is the equivalent of UB's `VehicleSet`
@@ -150,11 +152,13 @@ It uses the same definition as [`LongGun`](#longgun) above.
 <NonLethal>WEAPON_STUNGUN</NonLethal>
 ```
 
+:::important
 You should really ensure that long guns, hand guns and non-lethal weapons are **separated into
 their lists** because our Police AI chooses between weapon lists during combat situations
 based on different conditions, such as distance to the suspect and their weapon; having e.g. a
 long gun defined in the hand gun list will lead to unwanted (or wanted...depending on how insane
 you are tbh) combat behavior.
+:::
 
 ## `DefaultRegions.xml`
 Here are the config for the default units defined specific to world regions. A `LocalPatrol`,
@@ -210,8 +214,10 @@ Using our `LocalPatrol` as example again, it is as simple as:
     ...
 </LocalPatrol>
 ```
-**IMPORTANT:** A single unit CANNOT have several custom regions using the same zone. Though that should also
+:::warning
+A single unit **cannot** have several custom regions using the same zone. Though that should also
 be common sense.
+:::
 
 ## `SpecialUnits.xml`
 Here you can create your own `SpecialUnit` unit which is basically a mix of a default and custom unit entry:
@@ -243,9 +249,11 @@ Each a list of `VehicleDivision` just like in [`DefaultRegions.xml`](#defaultreg
     </CustomRegions>
 </SpecialUnit>
 ```
-**IMPORTANT:** Currently PR does NOT support special units that have air vehicles, therefore you
+:::warning
+Currently PR does **not** support special units that have air vehicles, therefore you
 cannot define special air units. Doing so will lead to undefined behavior and such reports will
 be **ignored**. This feature is planned for the future though!
+:::
 
 ## `CustomUnitNames.xml`
 This is an additional fourth file allowing you to create list of names that you can assign to a

@@ -16,9 +16,9 @@ through `.ini` files anymore and try to figure out whether something changed.\
 want to implement something similar for your plugin, check out this
 [IniReflector](https://github.com/Sprayxe/IniReflector) created by one of our devs.*
 
-### Important Note
-
+:::warning
 As of writing this, PR doesn't currently provide the same feature for `.xml` settings, so you
 will have to exclude those from drag-and-drop updating and manually update them. The changelog
 will always state what was changed and how to update your files. But don't worry: we are planning
 to also support auto-updating those too in the future! ;)
+:::

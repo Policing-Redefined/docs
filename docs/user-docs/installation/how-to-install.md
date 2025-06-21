@@ -17,5 +17,7 @@ where the latter is another system developed by us that PR uses in order to crea
 pedestrian and vehicle document data.\
 *If you are a developer you can read about it [here].*
 
+:::tip
 You will notice that the `Settings/` folder is empty but that is not something to worry about!
 PR will generate all `.ini` files automatically once you run it for the first time.
+:::

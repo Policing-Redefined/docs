@@ -8,11 +8,13 @@ sidebar_position: 4
 Since PR allows interaction with Peds it would only make sense for you to be able to ~~annoy~~
 interrogate them. Similar to [Search Items](./search-items.md), `Questions.xml` define **Ped Stop Questions**
 while `TrafficStopQuestions.xml` defines...exactly: **Traffic Stop Questions**.\
-Well and again, in case you are lazy (no judgement), PR also ships with 
-**Questions Reborn** made by Officer34 to your luck.
-
 Questions are pretty similar to STP, however PR adds additional parameters for a more immersive
 gameplay experience once again!
+
+:::tip
+Well and again, in case you are lazy (no judgement), PR also ships with 
+**Questions Reborn** made by Officer34 to your luck.
+:::
 
 Let's take a look at a basic `QuestionGroup`:\
 *(Don't get confused by stuff like `~s~~h~`, those are [formatting tags](https://wiki.rage.mp/wiki/Fonts_and_Colors) 
@@ -49,10 +51,12 @@ Nothing special **yet**, but wait, take a look at an example `Answer`:
 ```
 The ped mood also decides what kind of gesture animation the ped might play during answering.
 
+:::important
 Be aware that PR checks the attributes **exact**. For example when the ped is drunk and high,
 it will look for questions that have **both of these** attributes set to `True`.
 Just like when a ped is just drunk PR will use questions that **only** have the drunk attribute
 set to `True`.
+:::
 
 These attributes **do not** define a ped's state (`InteractionSettings.ini` offers
 some customization though)!
