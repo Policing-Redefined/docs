@@ -118,7 +118,7 @@ public override string ToString();
 ```
 -   **Returns:** A string representing the address.
 
-<!-- ## Postal
+## Postal
 
 The `Postal` class represents a geographical postal code within the game world. It typically defines a block number and associated X and Y coordinates. These objects are often used to define general areas on the map.
 
@@ -234,4 +234,4 @@ Gets the distance value stored in this instance. This represents the distance fr
 
 ```csharp
 public float Distance; 
-``` -->
+```
