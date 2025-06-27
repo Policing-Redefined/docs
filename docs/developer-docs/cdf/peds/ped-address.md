@@ -118,7 +118,7 @@ public override string ToString();
 ```
 -   **Returns:** A string representing the address.
 
-<!-- ## Postal
+## Postal
 
 The `Postal` class represents a geographical postal code within the game world. It typically defines a block number and associated X and Y coordinates. These objects are often used to define general areas on the map.
 
@@ -160,7 +160,54 @@ Returns the world zone (area name) where this postal code is located, based on i
 public WorldZone Zone;
 ```
 -   **Type:** `LSPD_First_Response.Engine.Scripting.WorldZone`
+## Methods
 
+### `GetPostalCode(Vector3 position)`
+:::note
+This method is technically under `PostalCodeController`. Not `Postal`
+:::
+Gets the postal code number as a string for a given world position.
+
+```csharp
+public static string GetPostalCode(Vector3 position)
+```
+
+#### Parameters
+
+-   **`position`**
+    -   **Type:** `Rage.Vector3`
+    -   **Description:** The world-coordinates position for which to retrieve the postal code.
+
+#### Returns
+-   **Type:** `string`
+-   **Description:** The postal code number as a string (e.g., "90210"). Returns an empty string (`""`) if no active postal code set is available or if no nearest postal code can be determined.
+---
+
+### `GetNearestPostalCode(Vector3 position)`
+:::note
+This method is technically under `PostalCodeController`. Not `Postal`
+:::
+
+Gets the nearest `NearestPostalCode` object to a given world position. This method performs a spatial search to find the closest postal code defined in the active set.
+
+```csharp
+public static NearestPostalCode GetNearestPostalCode(Vector3 position)
+```
+
+#### Parameters
+
+-   **`position`**
+    -   **Type:** `Rage.Vector3`
+    -   **Description:** The world-coordinates position from which to find the nearest postal code.
+
+#### Returns
+
+-   **Type:** `CommonDataFramework.Modules.Postals.NearestPostalCode`
+-   **See Also:** [CommonDataFramework.Modules.Postals.NearestPostalCode](#nearestpostal)
+-   **Description:** A `NearestPostalCode` object containing the closest `Postal` and the distance to it. 
+:::warning
+This method returns null if no active postal code set is available or if no postal codes are found within a relevant range.
+:::
 ## Operators
 
 ### Implicit Conversion to `Rage.Vector3`
@@ -234,4 +281,4 @@ Gets the distance value stored in this instance. This represents the distance fr
 
 ```csharp
 public float Distance; 
-``` -->
+```

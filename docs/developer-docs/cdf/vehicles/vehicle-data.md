@@ -142,7 +142,9 @@ public readonly VehicleInsurance Insurance;
 
 ### Methods
 ### `GetVehicleData(this Vehicle vehicle)`
-
+:::note
+This method is technically under `VehicleDataController`. Not `VehicleData`
+:::
 This static extension method allows you to retrieve or initialize a `VehicleData` record for a specified `Rage.Vehicle` instance.
 
 ```csharp
