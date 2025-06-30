@@ -4,7 +4,9 @@ sidebar_position: 2
 ---
 
 # How to install CDF
-
+:::note For developers
+Common Data Framework is available on [Nuget](https://www.nuget.org/packages/CommonDataFramework/).
+:::
 - Download and install latest [LSPDFR and RagePluginHook](https://www.lcpdfr.com/downloads/gta5mods/g17media/7792-lspd-first-response/)
 - Download latest [Common Data Framework](https://github.com/Policing-Redefined/CommonDataFramework/releases/)
 - Extract the .zip and drag-and-drop everything into your main GTA 5 directory (except the .xml)
