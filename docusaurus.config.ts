@@ -41,6 +41,14 @@ const config: Config = {
     ],
 
     themeConfig: {
+        algolia: {
+            appId: "KVH6AYDO64",
+            apiKey: "fc884fee2940fd39d3dc5d140df3fa9c",
+            indexName: "policing-redefined",
+            contextualSearch: true,
+            searchPagePath: 'false'
+        },
+
         // Replace with your project's social card
         image: 'img/PRBanner.png',
         navbar: {
