@@ -203,6 +203,24 @@ public string WeaponModelId;
 
 ---
 
+### `IsVisible`
+
+Whether the firearm is being carried open.
+
+```csharp
+public bool IsVisible;
+```
+---
+
+### `IsStolen`
+
+Whether the firearm is stolen.
+
+```csharp
+public bool IsStolen;
+```
+---
+
 ### `WeaponModelHash`
 
 The weapon hash associated with this weapon item.
