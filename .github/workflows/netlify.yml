@@ -14,8 +14,8 @@ jobs:
 
       # We don't know when the site will be deployed, we just wait a few seconds
       # Better solutions can be found
-      - name: Sleep for 60s
-        run: sleep 60
+      - name: Sleep for 50s
+        run: sleep 50
       # For main branch
       - name: Netlify-MAIN => Algolia crawler creation and recrawl (Push on Main branch)
         if: github.ref == 'refs/heads/main'
@@ -25,6 +25,7 @@ jobs:
           crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
           crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
           algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          crawler-name: 'policing-redefined'
           algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
           site-url: 'https://policing-redefined.netlify.app/'
           override-config: true
