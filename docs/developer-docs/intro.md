@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: Getting Started
 ---
 
-# Getting Started *as a developer*
+# Getting Started *as a Developer*
 **Policing Redefined** is a [LSPDFR](https://lcpdfr.com) plugin similar to popular
 plugins such as **Stop The Ped**, **Ultimate Backup** by Bejoijo or **LSPDFR+**, 
 **Arrest-Manager** by Albo1125. Unlike Stop The Ped and Ultimate Backup, we aim to provide a feature-rich easy to use API in order to allow you to make more immersive mods. 
