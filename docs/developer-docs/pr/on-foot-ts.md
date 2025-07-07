@@ -7,34 +7,6 @@ sidebar_position: 5
 
 Handles public methods for interacting with PR's on-foot traffic stops.
 
-## Delegates
-
-### `OnFootTrafficStopDelegate(PRHandle handle);`
-
-```csharp
-public delegate void OnFootTrafficStopDelegate(PRHandle handle);
-```
-
-## Events
-
-### `OnFootTrafficStopStarted;`
-
-Invoked when the player starts an on-foot traffic stop.
-
-```csharp
-public static event OnFootTrafficStopDelegate OnFootTrafficStopStarted;
-```
-
----
-
-### `OnFootTrafficStopEnded;`
-
-Invoked when an on-foot traffic stop ends.
-
-```csharp
-public static event OnFootTrafficStopDelegate OnFootTrafficStopEnded;
-```
-
 ## Methods
 
 ### `GetCurrentOnFootTrafficStop();`
