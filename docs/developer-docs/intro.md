@@ -17,4 +17,4 @@ PolicingRedefined offers its own APIs for interaction and backup elements of thi
 - Requesting dispatch
 - And much more!
 
-Documentation for PR specific apis will be coming soon.
+Documentation for PR specific apis is also documented. To learn more about it, [click here](/docs/developer-docs/pr/how-to-install-pr.md).

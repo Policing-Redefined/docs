@@ -46,6 +46,65 @@ public bool IsStolen;
 ```
 ---
 
+### `PrimaryColor`
+
+The vehicle's primary color
+
+```csharp
+public readonly string PrimaryColor;
+```
+
+---
+
+### `SecondaryColor`
+
+The vehicle's secondary color
+
+```csharp
+public readonly string SecondaryColor;
+```
+
+---
+
+### `PrimaryColorSpecific`
+
+The vehicle's primary color according to GTA
+
+```csharp
+public readonly string PrimaryColorSpecific;
+```
+
+---
+
+### `SecondaryColorSpecific`
+
+The vehicle's secondary color according to GTA
+
+```csharp
+public readonly string SecondaryColorSpecific;
+```
+
+---
+
+### `Make`
+
+The vehicle's make.
+
+```csharp
+public readonly string Make;
+```
+
+---
+
+### `Model`
+
+The vehicle's model
+
+```csharp
+public readonly string Model;
+```
+---
+
 ### `HasAnyBOLOs`
 :::note
  This property is read-only.
