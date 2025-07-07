@@ -129,46 +129,6 @@ Clears the search items of the specified ped.
 ```csharp
 public static void ClearPedSearchItems(Ped ped);
 ```
-
----
-
-### `AddCustomVehicleSearchItem(SearchItem item);`
-
-Adds a custom search item to the vehicle specified in the provided item.
-
-```csharp
-public static void AddCustomVehicleSearchItem(SearchItem item);
-```
-
----
-
-### `OverwriteVehicleSearchItems(Vehicle vehicle, params SearchItem[] items);`
-
-Overwrites the search items of the specified vehicle.
-
-```csharp
-public static void OverwriteVehicleSearchItems(Vehicle vehicle, params SearchItem[] items);
-```
-
----
-
-### `GetVehicleSearchItems(Vehicle vehicle);`
-
-Gets the search items of the specified vehicle.
-
-```csharp
-public static List<SearchItem> GetVehicleSearchItems(Vehicle vehicle);
-```
-
----
-
-### `ClearVehicleSearchItems(Vehicle vehicle);`
-
-Clears the search items of the specified vehicle.
-
-```csharp
-public static void ClearVehicleSearchItems(Vehicle vehicle);
-```
 ---
 
 ### `GetPedHasBeenPatDown(Ped ped);`
