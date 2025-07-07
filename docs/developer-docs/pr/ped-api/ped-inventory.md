@@ -163,6 +163,19 @@ public string WeaponModelId;
 
 ---
 
+### `FirearmSn`
+
+The firearm serial number associated with this weapon item
+
+:::note
+If the `FirearmState` is `ScratchedSN`, the serial number will return `SCRATCHED`.
+:::
+
+```csharp
+public string FirearmSn;
+```
+---
+
 ### `IsVisible`
 
 Whether the firearm is being carried open.
