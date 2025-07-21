@@ -142,7 +142,7 @@ Gets whether the specified ped has been searched.
 This is also true when the ped is dead and was then searched (in contrast to [EventsAPI pat down event](/docs/developer-docs/pr/pr-events.md#onpedpatdown)).
 :::
 :::note
-This method is found in the PedAPI class.
+This method is found in the `PedAPI` class.
 :::
 
 ```csharp
