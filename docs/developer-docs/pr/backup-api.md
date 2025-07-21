@@ -7,16 +7,16 @@ sidebar_position: 6
 
 Handles public methods for interacting with PR's backup system.
 
+:::warning
+Calling any method with a `dispatchAnim` parameter set to `true` will hold up the fiber (that the method was called on) until the animation is done.
+:::
+
 ## Requesting Backup
 
 ### `RequestBackup()` at player position
 
 Creates and dispatches the requested unit to the player's current position.
 For air units refer to [RequestAirBackup](#requestairbackup) and for prisoner transport refer to [RequestPoliceTransport](#requestpolicetransport).
-
-:::note
-Calling this method with the 'dispatchAnim' parameter set to 'true' will hold up the fiber (that the method was called on) until the animation is done.
-:::
 
 ```csharp
 public static bool RequestBackup(EBackupUnit unit, EBackupResponseCode responseCode, bool dispatchNotif = true, bool dispatchAnim = true, bool dispatchAudio = true);
@@ -29,10 +29,6 @@ public static bool RequestBackup(EBackupUnit unit, EBackupResponseCode responseC
 Creates and dispatches the requested unit to the provided destination.
 For air units refer to [RequestAirBackup](#requestairbackup) and for prisoner transport refer to [RequestPoliceTransport](#requestpolicetransport).
 
-:::note
-Calling this method with the 'dispatchAnim' parameter set to 'true' will hold up the fiber (that the method was called on) until the animation is done.
-:::
-
 ```csharp
 public static bool RequestBackup(EBackupUnit unit, EBackupResponseCode responseCode, Vector3 destination, bool dispatchNotif = true, bool dispatchAnim = true, bool dispatchAudio = true);
 ```
@@ -42,10 +38,6 @@ public static bool RequestBackup(EBackupUnit unit, EBackupResponseCode responseC
 ### `RequestTrafficStopBackup()`
 
 Creates and dispatches the requested unit to an active traffic stop.
-
-:::note
-Calling this method with the 'dispatchAnim' parameter set to 'true' will hold up the fiber (that the method was called on) until the animation is done.
-:::
 
 ```csharp
 public static bool RequestTrafficStopBackup(EBackupUnit unit, EBackupResponseCode responseCode, bool dispatchNotif = true, bool dispatchAnim = true, bool dispatchAudio = true);
@@ -101,10 +93,6 @@ public static bool RequestPanicBackup(Vector3 destination, bool dispatchNotif = 
 
 Creates and dispatches defined group backup units to the player's current position.
 
-:::warning
-Calling this method with the 'dispatchAnim' parameter set to 'true' will hold up the fiber (that the method was called on) until the animation is done.
-:::
-
 ```csharp
 public static bool RequestGroupBackup(bool dispatchNotif = true, bool dispatchAnim = true, bool dispatchAudio = true);
 ```
@@ -114,10 +102,6 @@ public static bool RequestGroupBackup(bool dispatchNotif = true, bool dispatchAn
 ### `RequestGroupBackup()` at provided position
 
 Creates and dispatches group backup units to the provided destination.
-
-:::warning
-Calling this method with the 'dispatchAnim' parameter set to 'true' will hold up the fiber (that the method was called on) until the animation is done.
-:::
 
 ```csharp
 public static bool RequestGroupBackup(Vector3 destination, bool dispatchNotif = true, bool dispatchAnim = true, bool dispatchAudio = true);
@@ -185,8 +169,6 @@ This method only spawns the entities into the world without any handling or AI b
 ### `SpawnLocalBackup()`
 
 Spawns a local variation of the requested unit at the specified position.
-
-
 
 ```csharp
 public static bool SpawnLocalBackup(EBackupUnit unit, Vector3 position, out Vehicle unitVehicle, out List<Ped> unitPeds);
@@ -276,4 +258,4 @@ public enum EBackupUnit
 ```
 
 #### Definitions
-Pretty self explanatory.
+Pretty self-explanatory.

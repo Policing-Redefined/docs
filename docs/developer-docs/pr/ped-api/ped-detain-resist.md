@@ -27,7 +27,7 @@ public static bool IsPedArrested(Ped ped);
 ---
 ### `GiveCitationToPed(Ped ped, Citation citation);`
 
-Gives a citation to the specified ped.
+Issues a citation for the specified ped that the player will be able to give to the ped.
 :::note
 Best suited for computer plugins. 
 :::
@@ -97,7 +97,7 @@ public static EResistanceAction GetPedResistanceAction(Ped ped);
 
 Sets the resistance type of the specified ped.
 :::note
-Returns false when the ped is executing a resistance action right now, the resistance action was set to be kept on or when the ped is [arrested](#ispedarrestedped-ped) and the requested resistance action was something other than [`EResistanceAction.None`](#eresistanceaction) and [`EResistanceAction.Uncooperative`](#eresistanceaction)
+Returns `false` when the ped is executing a resistance action right now, the resistance action was set to be kept on or when the ped is [arrested](#ispedarrestedped-ped) and the requested resistance action was something other than [`EResistanceAction.None`](#eresistanceaction) and [`EResistanceAction.Uncooperative`](#eresistanceaction)
 :::
 
 ```csharp

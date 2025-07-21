@@ -49,7 +49,7 @@ public static bool IsPedHigh(Ped ped);
 
 Gets the drugs the specified ped is on.
 :::info
-This is enum is a flag as a ped can be on multiple drugs. You need to extract the flags from the returned value.
+This is enum is a flag as a ped can be on multiple drugs. You need to **extract the flags** from the returned value.
 :::
 
 ```csharp

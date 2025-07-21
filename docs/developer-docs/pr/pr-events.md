@@ -10,7 +10,7 @@ The PolicingRedefined API provides events that developers can subscribe to in or
 
 ### `OnFootTrafficStopDelegate(PRHandle handle)`
 :::note
- This delegate is found in the OnFootTrafficStopAPI class.
+ This delegate is found in the `OnFootTrafficStopAPI` class.
 :::
 
 ```csharp
@@ -79,7 +79,7 @@ public delegate void IdentificationGivenDelegate(Ped ped, EGivenIdentification g
 
 ### `OnFootTrafficStopStarted`
 :::note
- This event is found in the OnFootTrafficStopAPI class.
+ This event is found in the `OnFootTrafficStopAPI` class.
 :::
 
 Invoked when the player starts an on-foot traffic stop.
@@ -92,7 +92,7 @@ public static event OnFootTrafficStopDelegate OnFootTrafficStopStarted;
 
 ### `OnFootTrafficStopEnded`
 :::note
- This event is found in the OnFootTrafficStopAPI class.
+ This event is found in the `OnFootTrafficStopAPI` class.
 :::
 
 Invoked when an on-foot traffic stop ends.
@@ -165,7 +165,7 @@ public static event PedDelegate OnPedStopped;
 
 Invoked when a stopped ped was released.
 
-:::info Important
+:::warning
 The released ped might not exist in the game world anymore.
 :::
 

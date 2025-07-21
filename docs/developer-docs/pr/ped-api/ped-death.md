@@ -6,7 +6,7 @@ sidebar_position: 4
 # Ped Death
 
 :::note
-All methods found in this section are in the PedAPI class.
+All methods found in this section are in the `PedAPI` class.
 :::
 
 ### `GetPedCauseOfDeath(Ped ped, out bool requiresAutopsy);`

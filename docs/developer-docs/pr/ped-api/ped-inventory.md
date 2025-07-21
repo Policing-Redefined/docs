@@ -5,7 +5,11 @@ sidebar_position: 1
 
 # Ped Inventory
 
-Search items in PolicingRedefined work differently than other plugins. Normal day items such as a phone, wallet, earbuds, etc are considered a normal SearchItem. However, we make special exceptions to two(technically three) types of items, weapons/firearms and drugs. In PR, weapons/firearms and drugs are subclasses of the `SearchItem` class. In this section, we will explain how to use these different classes and the methods we provide.
+Search items in PolicingRedefined work differently than other plugins.
+Normal day items such as a phone, wallet, earbuds, etc. are considered a normal SearchItem.
+However, we make special exceptions to two (technically three) types of items, weapons/firearms
+and drugs. In PR, weapons/firearms and drugs are subclasses of the `SearchItem` class.
+In this section, we will explain how to use these different classes and the methods we provide.
 
 ## Search Item
 
@@ -57,8 +61,8 @@ public SearchItem(string item, EItemLocation itemLocation, Vehicle foundIn, EIte
 ```
 ## Drug Item
 Represents a type of drug a ped might have in their vehicle or on their person.
-:::note
-This class extends the base SearchItem class. Thus, all properties/methods found in the base class are applicable here.
+:::important
+This class extends the base `SearchItem` class. Thus, all properties/methods found in the base class are applicable here.
 :::
 ### `DrugType`
 
@@ -88,8 +92,8 @@ public DrugItem(string item, EItemLocation itemLocation, Vehicle foundIn, EDrugT
 ```
 
 ## Non Weapon Wheel Inventory Methods
-:::note
-The methods below are found in the SearchItemsAPI class unless otherwise specified.
+:::important
+The methods below are found in the `SearchItemsAPI` class unless otherwise specified.
 :::
 
 ### `AddCustomPedSearchItem(SearchItem item);`
@@ -134,8 +138,8 @@ public static void ClearPedSearchItems(Ped ped);
 ### `GetPedHasBeenPatDown(Ped ped);`
 
 Gets whether the specified ped has been searched.
-:::info
-This is also true when the ped is dead and was then searched (in contrast to [EventsAPI pat down event](/docs/developer-docs/pr/pr-events.md#onpedpatdown).
+:::important
+This is also true when the ped is dead and was then searched (in contrast to [EventsAPI pat down event](/docs/developer-docs/pr/pr-events.md#onpedpatdown)).
 :::
 :::note
 This method is found in the PedAPI class.
@@ -146,14 +150,14 @@ public static bool GetPedHasBeenPatDown(Ped ped);
 ```
 ## Weapon Item
 Represents a weapon/firearm. Most likely can be added to the GTA Weapon Wheel.
-:::note
-This class extends the base SearchItem class. Thus, all properties/methods found in the base class are applicable here.
+:::important
+This class extends the base `SearchItem` class. Thus, all properties/methods found in the base class are applicable here.
 :::
 ### `WeaponModelId`
 
 The GTA weapon model id of this firearm item.
 
-:::info
+:::warning
 This will default to `WEAPON_KNIFE` if required (e.g. accessing `WeaponModelHash`).
 :::
 
@@ -223,7 +227,7 @@ public WeaponItem(string item, Pickup pickup, string weaponModelId, EItemChance 
 __When talking about firearms, we mean guns like the things that go pew pew. If we say weapon, that means a melee weapon such as a knife. Throwables should work too in the context of melee weapons.__
 :::
 :::note
-All methods found in this section are in the PedAPI class unless otherwise specified.
+All methods found in this section are in the `PedAPI` class unless otherwise specified.
 :::
 
 ### `GiveFirearmToPed(Ped ped, FirearmItem firearmItem, short ammoCount, bool equipNow);`
@@ -359,7 +363,7 @@ public enum EItemChance
 }
 ```
 #### Definitions
-Pretty self explanatory.
+Pretty self-explanatory.
 
 ---
 
