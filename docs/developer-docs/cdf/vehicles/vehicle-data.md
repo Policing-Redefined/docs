@@ -201,8 +201,8 @@ public readonly VehicleInsurance Insurance;
 
 ### Methods
 ### `GetVehicleData(this Vehicle vehicle)`
-:::note
-This method is technically under `VehicleDataController`. Not `VehicleData`
+:::important
+This method is under `VehicleDataController`.
 :::
 This static extension method allows you to retrieve or initialize a `VehicleData` record for a specified `Rage.Vehicle` instance.
 
@@ -253,7 +253,7 @@ public void AddBOLO(VehicleBOLO bolo);
         -   **Description:** The BOLO entry to add. 
 
 :::warning
-If bolo is null, no bolo will be added.
+Parameter `bool` must not be `null`.
 :::
 ---
 
@@ -271,8 +271,8 @@ public void RemoveBOLO(VehicleBOLO bolo)
         -   **See Also:** [VehicleBOLO class](/docs/developer-docs/cdf/vehicles/vehicle-bolo.md)
         -   **Description:** The BOLO entry to remove.
 :::warning
- If bolo is null or no BOLOs exist, no action is performed.
- :::
+If the parameter `bolo` is `null` or the bolo entry doesn't exist, no action is performed.
+:::
 
 ---
 
@@ -289,8 +289,8 @@ public bool TrySetOwner(EVehicleOwnerType ownerType);
         -   **Type:** `EVehicleOwnerType`
         -   **See Also** [EVehicleOwnerType](#evehicleownertype-enumeration)
         -   **Description:** The desired type of owner to set for the vehicle.
-:::note
-if the vehicle does not exist or the owner type is incompatible with the vehicle's current state, this method will return false
+:::warning
+If the vehicle does not exist or the owner type is incompatible with the vehicle's current state, this method will return `false`.
 :::
 
 ---
@@ -308,8 +308,8 @@ public bool TrySetOwner(PedData pedData);
         -   **Type:** `PedData`
         -   **See Also:** [PedData Class](/docs/developer-docs/cdf/peds/ped-data.md)
         -   **Description:** The `PedData` record representing the desired manual owner.
-:::note
-This method returns false if `pedData` is null.
+:::warning
+This method returns `false` if `pedData` is `null`.
 :::
 ---
 
@@ -341,7 +341,7 @@ public enum EVehicleOwnerType
     -   **Description:** The driver is a randomly generated pedestrian. This type is also used when the vehicle is marked as stolen.
 -   **`Government`**
     -   **Description:** The vehicle is owned by a government entity (e.g., emergency vehicles). 
-    :::note
+    :::important
     In this case, `VehicleData.Owner` will not have a valid `Rage.Ped` (i.e., `PedData.HasRealPed` will be `false`).
     :::
 -   **`Manual`**
@@ -383,7 +383,7 @@ Gets the 17-character VIN string.
 :::note
 This property is read-only.
 :::
-:::info Important
+:::important
 Before displaying the VIN, you might want to check its `Status` property, as it could be `EVinStatus.Scratched` if your application accounts for such scenarios.
 :::
 
@@ -421,7 +421,7 @@ public override string ToString();
 
 Provides a common base for all vehicle-related documents (like registration and insurance). It defines shared properties such as `Status` and `ExpirationDate`.
 :::warning
-This class is abstract, meaning you cannot make an instance of VehicleDocument
+This class is `abstract`.
 :::
 
 ```csharp
@@ -473,4 +473,4 @@ public class VehicleInsurance : VehicleDocument
 ```
 ----
 :::note
-All properties mentioned in [VehicleDocument](#vehicle-documents) are availble in `VehicleRegistration` and `VehicleInsurance`.
+All properties mentioned in [VehicleDocument](#vehicle-documents) are available in `VehicleRegistration` and `VehicleInsurance`.

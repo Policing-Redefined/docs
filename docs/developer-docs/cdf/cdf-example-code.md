@@ -6,13 +6,18 @@ sidebar_label: 'Example Code'
 :::tip
 CDF might take some time until it fully read the users .xml and .ini file on startup. This means that if you try to access CDF stuff before it was marked as ready, it will have to fall back to default values. One way of solving this is shown below.
 ```csharp
- private static void OnOnDutyStateChanged(bool onDuty)
-    {
-        OnDutyState = onDuty;
-        GameFiber.WaitUntil(CDFFunctions.IsPluginReady, 30000);        
-    }
+private static void OnOnDutyStateChanged(bool onDuty)
+{
+    OnDutyState = onDuty;
+    
+    // Init your plugin
+    
+    // Wait until CDF is loaded
+    GameFiber.WaitUntil(CDFFunctions.IsPluginReady, 30000);
+    // Init the rest of your plugin that uses CDF dependent code on start-up
+}
 ```
-Alternatively, if you don't care about the default values or you are not using CDF right on startup, you can simply skip this.
+Alternatively, if you don't care about the default values, or if you are not using CDF right on startup, you can simply skip this.
 :::
 
 ```csharp

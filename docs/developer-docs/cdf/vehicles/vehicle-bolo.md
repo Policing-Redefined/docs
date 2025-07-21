@@ -4,7 +4,7 @@ sidebar_label: Vehicle Bolos
 ---
 # Vehicle BOLO
 
-Represents a "Be On the LookOut" (BOLO) entry for a vehicle, indicating that it is subject to special attention from law enforcement.
+Represents a "Be On the Look-Out" (BOLO) entry for a vehicle, indicating that it is subject to special attention from law enforcement.
 
 ```csharp
 public class VehicleBOLO;

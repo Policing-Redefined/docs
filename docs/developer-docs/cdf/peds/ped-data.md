@@ -285,8 +285,8 @@ public string ToNameAndDOBString();
 --- 
 
 ### `GetPedData(this Ped ped)`
-:::note
-This method is technically under `PedDataController`. Not `PedData`
+:::important
+This method is under `PedDataController`.
 :::
 This static extension method, provides a convenient way to retrieve or initialize a `PedData` record for a specified `Rage.Ped` instance.
 

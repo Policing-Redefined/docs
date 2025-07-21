@@ -163,8 +163,8 @@ public WorldZone Zone;
 ## Methods
 
 ### `GetPostalCode(Vector3 position)`
-:::note
-This method is technically under `PostalCodeController`. Not `Postal`
+:::important
+This method is under `PostalCodeController`.
 :::
 Gets the postal code number as a string for a given world position.
 
@@ -184,8 +184,8 @@ public static string GetPostalCode(Vector3 position)
 ---
 
 ### `GetNearestPostalCode(Vector3 position)`
-:::note
-This method is technically under `PostalCodeController`. Not `Postal`
+:::important
+This method is under `PostalCodeController`.
 :::
 
 Gets the nearest `NearestPostalCode` object to a given world position. This method performs a spatial search to find the closest postal code defined in the active set.
