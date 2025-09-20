@@ -11,11 +11,6 @@ while `TrafficStopQuestions.xml` defines...exactly: **Traffic Stop Questions**.\
 Questions are pretty similar to STP, however PR adds additional parameters for a more immersive
 gameplay experience once again!
 
-:::tip
-Well and again, in case you are lazy (no judgement), PR also ships with 
-**Questions Reborn** made by Officer34 to your luck.
-:::
-
 Let's take a look at a basic `QuestionGroup`:\
 *(Don't get confused by stuff like `~s~~h~`, those are [formatting tags](https://wiki.rage.mp/wiki/Fonts_and_Colors) 
 used by GTA.)*

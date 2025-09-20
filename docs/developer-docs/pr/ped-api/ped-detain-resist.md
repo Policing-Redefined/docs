@@ -14,6 +14,14 @@ Gets whether the specified ped is stopped by PR.
 public static bool IsPedStopped(Ped ped);
 ```
 
+### `SetPedAsStopped(Ped ped);`
+
+Sets a ped as stopped within PR.
+
+```csharp
+public static void SetPedAsStopped(Ped ped);
+```
+
 ---
 
 ### `IsPedArrested(Ped ped);`
@@ -22,6 +30,14 @@ Gets whether the specified ped is arrested by PR.
 
 ```csharp
 public static bool IsPedArrested(Ped ped);
+```
+
+### `SetPedAsArrested(Ped ped);`
+
+Sets a ped as arrested within PR.
+
+```csharp
+public static void SetPedAsArrested(Ped ped, bool frontCuffs);
 ```
 
 ---

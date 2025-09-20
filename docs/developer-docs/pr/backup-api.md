@@ -227,6 +227,28 @@ Each ped is a randomized variant.
 public static Ped[] SpawnLocalBackupPeds(EBackupUnit unit, Vector3 position, Vector3 spawnPosition, float heading, int amount, bool equipWeapons = false);
 ```
 
+---
+
+:::note
+If you just need local models (e.g. for dimensions & other stuff) you can use these APIs.
+:::
+
+### `GetLocalBackupVehicleModels()`
+
+Returns an array of all local vehicle models of the requested unit.
+
+```csharp
+public static Model[] GetLocalBackupVehicleModels(EBackupUnit unit, Vector3 position);
+```
+
+### `GetLocalBackupPedModels()`
+
+Returns an array of all local ped models of the requested unit.
+
+```csharp
+public static Model[] GetLocalBackupPedModels(EBackupUnit unit, Vector3 position);
+```
+
 ## Enums
 
 ### `EBackupUnit`
