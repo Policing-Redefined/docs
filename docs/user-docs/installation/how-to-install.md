@@ -7,10 +7,9 @@ sidebar_position: 1
 
 Installing PR is fairly simple: just like any other LSPDFR plugin.
 
-Upon downloading PR you will get a `Policing Redefined v[VERSION].zip` archive
-containing all files that are required to run the plugin. Simply extract the content of it
-and drag-and-drop the content of the `GTAV MAIN DIRECTORY` folder into your
-**GTA 5 root directory**.
+Upon downloading PR you will get a `Policing Redefined v[VERSION].zip` archive.
+Simply extract it and drag-and-drop the contents of the `GTAV MAIN DIRECTORY` folder into 
+your **GTA 5 root directory**.
 
 :::danger Requirements
 You also need to download and install (if not already):
