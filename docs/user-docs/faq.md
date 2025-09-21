@@ -45,6 +45,7 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
   <summary>Does CompuLite work with PR? Will it ever work with PR?</summary>
   <div>
     <div>No.</div>
+    We recommend you use **[ReportsPlus](https://www.lcpdfr.com/downloads/gta5mods/scripts/46968-reportsplus-external-mdt-new-custom-reports/)** or **[ExternalPoliceComputer](https://www.lcpdfr.com/downloads/gta5mods/scripts/45400-externalpolicecomputer/)**, as both are fully intergrated.
   </div>
 </details>
 ---
