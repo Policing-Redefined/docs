@@ -15,7 +15,7 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
     <li>CompuLite, StopThePed, UltimateBackup</li>
 </ul>
 :::
----
+‎
 <details>
   <summary>I ported over my UB Configs and now my game is crashing on start!</summary>
   <div>
@@ -52,5 +52,24 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
   <summary>How do I align Custom Prop Offsets?</summary>
   <div>
     <div>Watch **[this](https://www.youtube.com/watch?v=hIImN6f9ayM)** video made by Marcel</div>
+  </div>
+</details>
+---
+<details>
+  <summary>When I go to get my gun from my car the game crashes!</summary>
+  <div>
+    <div>Verify that:</div>
+      <ul>
+        <li>The weapon name is valid</li>
+        <li>Your component names are valid</li>
+        <li>Your loadout weapon name isn't empty</li>
+        <li>You have no empty component entries</li>
+      </ul>
+      <div>Example of an empty component entry:</div>
+      ```
+      <WeaponComponents>
+        <WeaponComponent></WeaponComponent>
+      </WeaponComponents>
+      ```
   </div>
 </details>
