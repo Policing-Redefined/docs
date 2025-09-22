@@ -114,10 +114,6 @@ const config: Config = {
                             label: 'LCPDFR Homepage',
                             href: 'https://www.lcpdfr.com/downloads/gta5mods/scripts/52191-policing-redefined/',
                         },
-                        {
-                            label: 'Modification Universe Homepage',
-                            href: 'https://modification-universe.com/',
-                        },
                     ],
                 }
             ],
