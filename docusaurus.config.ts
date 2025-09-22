@@ -108,11 +108,11 @@ const config: Config = {
                     items: [
                         {
                             label: 'Discord',
-                            href: 'https://discord.gg/',
+                            href: 'https://discord.gg/p9JddhzvaB',
                         },
                         {
                             label: 'LCPDFR Homepage',
-                            href: 'https://lcpdfr.com/',
+                            href: 'https://www.lcpdfr.com/downloads/gta5mods/scripts/52191-policing-redefined/',
                         },
                         {
                             label: 'Modification Universe Homepage',
