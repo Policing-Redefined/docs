@@ -1,7 +1,7 @@
 # FAQ
 
 :::warning
-Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativeUI/releases/tag/1.9.3) and [Damage Tracker Framework](https://www.lcpdfr.com/downloads/gta5mods/scripts/42767-damage-tracker-framework/) installed.
+Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativeUI/releases/latest) and [Damage Tracker Framework](https://www.lcpdfr.com/downloads/gta5mods/scripts/42767-damage-tracker-framework/) installed.
 :::
 
 :::warning
@@ -13,20 +13,22 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
     <li>HoldYourFire</li>
     <li>HighWay Callouts</li>
     <li>CompuLite, StopThePed, UltimateBackup</li>
+    <li>Any version of Albo's mods (think TrafficPolicer, LSPDFR+ etc)</li>
+    <li>LSPDFR Policer Advanced</li>
 </ul>
 :::
 ‎
 <details>
-  <summary>I ported over my UB Configs and now my game is crashing on start!</summary>
+  <summary>I ported over my UB Configs, and now my game is crashing on start!</summary>
   <div>
-    <div>This is a commmon issue with some config sets, please see **[this video](https://www.youtube.com/watch?v=C_UBs0qdT5U)** for solutions.</div>
+    <div>This is a common issue with some config sets. Please see **[this video](https://www.youtube.com/watch?v=C_UBs0qdT5U)** for solutions.</div>
   </div>
 </details>
 ---
 <details>
   <summary>I can't find my weapon configuration</summary>
   <div>
-    <div>The Loadouts.xml can be found at `Grand Theft Auto V/plugins/LSPDFR/PolicingRedefined`. It will look like it supports multiple loadouts, **it does not**.</div>
+    <div>The Loadouts.xml can be found at `Grand Theft Auto V/plugins/LSPDFR/PolicingRedefined`. It will appear to support multiple loadouts, **but it does not**.</div>
     <ul>
         <li>Weapon names can be found here: https://wiki.rage.mp/wiki/Weapons</li>
         <li>Weapon component names can be found here: https://wiki.rage.mp/wiki/Weapons_Components</li>
@@ -37,7 +39,7 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
 <details>
   <summary>I switched to PR and now the flashlight animation is different?</summary>
   <div>
-    <div>Stop The Ped has it's own custom flashlight animation, PR does not yet. This may change in a future update.</div>
+    <div>Stop The Ped has its own custom flashlight animation, PR does not yet. This may change in a future update.</div>
   </div>
 </details>
 ---
@@ -57,7 +59,7 @@ Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativ
 </details>
 ---
 <details>
-  <summary>When I go to get my gun from my car the game crashes!</summary>
+  <summary>When I go to get my gun from my car, the game crashes!</summary>
   <div>
     <div>Verify that:</div>
       <ul>
