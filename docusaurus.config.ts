@@ -102,7 +102,7 @@ const config: Config = {
                     items: [ 
                         {
                             label: 'Discord',
-                            href: 'https://discord.gg/',
+                            href: 'https://discord.com/invite/p9JddhzvaB/',
                         },
                         {
                             label: 'LCPDFR Homepage',
