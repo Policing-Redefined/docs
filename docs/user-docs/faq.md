@@ -1,20 +1,12 @@
+---
+sidebar_position: 10
+---
+
+import AlertsBar from '../../src/components/CMS/AlertsBar';
+
+
 # FAQ
-
-:::warning
-Please make sure you have [RageNativeUI](https://github.com/alexguirre/RAGENativeUI/releases/tag/1.9.3) and [Damage Tracker Framework](https://www.lcpdfr.com/downloads/gta5mods/scripts/42767-damage-tracker-framework/) installed.
-:::
-
-:::warning
-**Known incompatible plugins**
-<ul>
-    <li>TacticalResponseBackup</li>
-    <li>Typical Callouts</li>
-    <li>Pinx Callouts</li>
-    <li>HoldYourFire</li>
-    <li>HighWay Callouts</li>
-    <li>CompuLite, StopThePed, UltimateBackup</li>
-</ul>
-:::
+<AlertsBar></AlertsBar>
 ‎
 <details>
   <summary>I ported over my UB Configs and now my game is crashing on start!</summary>

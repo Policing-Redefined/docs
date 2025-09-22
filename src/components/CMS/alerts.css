@@ -1,0 +1,75 @@
+.alerts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+/* Base alert */
+.alert {
+    padding: 14px 18px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.alert-red {
+    background-color: #2a1114;
+    border-color: #a4262c;
+}
+
+.alert-green {
+    background-color: #102515;
+    border-color: #2e7d32;
+}
+
+.alert-blue {
+    background-color: #0d1f2d;
+    border-color: #1976d2;
+}
+
+.alert-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* alerts.css */
+.alert-body.markdown {
+    margin-top: .5rem;
+}
+
+.alert-body.markdown ul {
+    margin: .5rem 0 .25rem 1.25rem;
+    list-style: disc;
+}
+
+.alert-body.markdown ol {
+    margin: .5rem 0 .25rem 1.25rem;
+    list-style: decimal;
+}
+
+.alert-body.markdown p {
+    margin: .25rem 0;
+}
+
+.alert-body.markdown code {
+    padding: .1rem .3rem;
+    border-radius: .25rem;
+    background: rgba(255, 255, 255, .06);
+}
+
+.alert-body.markdown pre {
+    padding: .75rem;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, .06);
+    overflow: auto;
+}
+
+.alert-body.markdown blockquote {
+    border-left: 3px solid rgba(255, 255, 255, .2);
+    padding-left: .75rem;
+    margin: .5rem 0;
+    color: rgba(255, 255, 255, .85);
+}
