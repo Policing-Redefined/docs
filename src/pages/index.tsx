@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -13,10 +13,10 @@ function HomepageHeader() {
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
-                <Heading as="h1" className="hero__title" style={{color: "white"}}>
+                <Heading as="h1" className="hero__title" style={{ color: "white" }}>
                     {siteConfig.title}
                 </Heading>
-                <p className="hero__subtitle" style={{color: "white"}}>{siteConfig.tagline}</p>
+                <p className="hero__subtitle" style={{ color: "white" }}>{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
@@ -40,9 +40,9 @@ export default function Home(): ReactNode {
         <Layout
             title={`${siteConfig.title}`}
             description="The new era of LSPDFR is here.">
-            <HomepageHeader/>
+            <HomepageHeader />
             <main>
-                <HomepageFeatures/>
+                <HomepageFeatures />
             </main>
         </Layout>
     );
