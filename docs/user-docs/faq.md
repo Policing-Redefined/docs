@@ -37,7 +37,7 @@ import AlertsBar from '../../src/components/CMS/AlertsBar';
   <summary>Does CompuLite work with PR? Will it ever work with PR?</summary>
   <div>
     <div>No.</div>
-    We recommend you use **[ReportsPlus](https://www.lcpdfr.com/downloads/gta5mods/scripts/46968-reportsplus-external-mdt-new-custom-reports/)** or **[ExternalPoliceComputer](https://www.lcpdfr.com/downloads/gta5mods/scripts/45400-externalpolicecomputer/)**, as both are fully intergrated.
+    We recommend **[ReportsPlus](https://www.lcpdfr.com/downloads/gta5mods/scripts/46968-reportsplus-external-mdt-new-custom-reports/)**, **[ExternalPoliceComputer](https://www.lcpdfr.com/downloads/gta5mods/scripts/45400-externalpolicecomputer/)** or **[pdComp](https://www.lcpdfr.com/downloads/gta5mods/scripts/54106-pdcomp-police-computer/)**. All mods are great additions to your game and have great integration with PolicingRedefined.
   </div>
 </details>
 ---
