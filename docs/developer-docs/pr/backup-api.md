@@ -249,8 +249,33 @@ Returns an array of all local ped models of the requested unit.
 public static Model[] GetLocalBackupPedModels(EBackupUnit unit, Vector3 position);
 ```
 
-## Enums
+## Interacting with Backup
+### `RequestPedSearch()`
+<small>Added in v1.0.0.3</small><br/>
+Attempts to initiate a ped search interaction between an officer and a suspect. Validates both entities are present, available, and in a valid state before executing the search through the EntitySearchManager.
 
+Returns true if the search was successfully initiated; otherwise false.
+
+:::info
+The search will only proceed if:
+- Both officer and suspect are non-null and available
+- The officer is a valid backup ped
+- The suspect is not a cop
+- The suspect is in a stopped state
+:::
+
+```csharp
+public static bool RequestPedSearch(Ped officer, Ped suspect)
+```
+
+### `IsPedPartner()`
+<small>Added in v1.0.0.3</small><br/>
+Returns whether the provided ped is currently a partner of the player.
+```csharp
+public static bool IsPedPartner(Ped ped)
+```
+
+## Enums
 ### `EBackupUnit`
 
 Represents all requestable backup units.
