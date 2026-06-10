@@ -256,10 +256,13 @@ Attempts to initiate a ped search interaction between an officer and a suspect. 
 
 Returns true if the search was successfully initiated; otherwise false.
 
-:::info
+:::warning
+**This will pause the calling fiber until the task is completed (WaitForCompletion)**
+
 The search will only proceed if:
 - Both officer and suspect are non-null and available
 - The officer is a valid backup ped
+- The officer is a PolicePed
 - The suspect is not a cop
 - The suspect is in a stopped state
 :::

@@ -45,6 +45,14 @@ Stops traffic around the player.
 public static void Stop(bool dispatchAudio)
 ```
 
+### `SlowAtPosition()`
+Slows traffic around a position.
+Position refers to the center of the traffic control area.
+
+```cs
+public static void SlowAtPosition(bool dispatchAudio, Vector3 position)
+```
+
 ### `StopAtPosition()`
 Stops traffic around a position.
 Position refers to the center of the traffic control area.
